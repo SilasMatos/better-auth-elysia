@@ -5,10 +5,9 @@ const app = new Elysia()
 .get("/", () => "Hello Elysia")
 .get("/users/:id", ({params}) =>  {
   const userId = params.id
-params: z.object({
-  id: z.string().uuid()
-})  
-
+  params: z.object({
+    id: z.string().uuid()
+  })  
 }
 
 )
