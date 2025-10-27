@@ -8,6 +8,7 @@ export const auth = betterAuth({
         openAPI()
         
     ],
+    trustedOrigins: ["http://localhost:5173"],
     database: drizzleAdapter(
     db, {
         provider: "pg",
